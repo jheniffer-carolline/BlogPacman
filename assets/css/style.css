@@ -1,0 +1,141 @@
+.img-center {
+    text-align: center;
+}
+
+.img-size {
+    width: 1200px;
+    height: 500px;
+}
+
+.card-size {
+    width: 259px;
+    height: 280px;
+}
+
+#img-bg {
+    background-image: url(/assets/img/bgg.jpg);
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-color {
+    text-decoration: white;
+}
+
+.img-login {
+    width: 150px;
+    height: 150px;
+}
+
+.card-sobre-nos {
+    width: 723px;
+    height: 250px;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(22, 192, 25);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e6f6ff)
+}
+
+.pacman {
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+
+    animation: pacman-animation 3s infinite linear;
+}
+
+.ghost {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+
+    animation: clouds-animation 20s infinite linear;
+}
+
+@keyframes pacman-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180%;
+    }
+
+    70% {
+        bottom: 180%;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+
+}
+
+
+.tm-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div a:hover {
+    transform: translateY(-15px);
+
+}
+
+.menu-ep {
+    margin-right: 20px;
+}
